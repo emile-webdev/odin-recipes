@@ -1,0 +1,161 @@
+/* --- GLOBAL CSS ---*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* ---Check Box Model--- */
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color:khaki;
+}
+
+.wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color:#DD3737;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+hr {
+    border: 1px solid #DD3737;
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    padding: 15px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    padding: 5px 20px;
+}
+
+a:hover {
+    color: #DD3737;
+}
+
+.description {
+    max-width: 800px;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.ingredients-container, .steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0 50px 30px 70px;
+    margin: auto;
+    max-width: 800px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.ingredients-container p, .steps-container p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.ingredients-container {
+    margin: 40px auto; 
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.steps-container {
+    margin: auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background: lightgrey;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.foot-note {
+    color: gray;
+    margin-top: 50px;
+}
+
+/* --- INDEX PAGE CSS --- */
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#flex-container li > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+#flex-container li img {
+    width: 300px;
+    height: 250px;
+}
+
+ul li a {
+    text-align: center;
+}
+
+/* --- CSS FOR RESPONSIVE IMAGES --- */
+
+@media screen and (max-width:980px) {
+    img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    img {
+        width: 400px;
+    }
+}
