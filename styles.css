@@ -11,13 +11,14 @@
 
 body {
     background-color:khaki;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
 }
 
 .wrapper {
-    padding: 5px;
+    padding: 15px;
     max-width: 960px;
     width: 95%;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 h1, h2, h3, p {
@@ -45,6 +46,7 @@ h2, h3 {
 p {
     font-size: 18px;
     padding: 5px 20px;
+    color: black;
 }
 
 a:hover {
